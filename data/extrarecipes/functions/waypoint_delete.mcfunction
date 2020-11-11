@@ -1,0 +1,2 @@
+execute at @e[type=item,nbt={Item:{id:"minecraft:tube_coral_block"}}] if entity @e[type=armor_stand,distance=..5,tag=waypoint] at @e[type=armor_stand,distance=..5,tag=waypoint] run particle minecraft:dragon_breath ~ ~ ~ 0 1 0 0.3 10000
+execute at @e[type=item,nbt={Item:{id:"minecraft:tube_coral_block"}}] if entity @e[type=armor_stand,distance=..5,tag=waypoint] run kill @e[type=armor_stand,distance=..5,tag=waypoint]

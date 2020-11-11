@@ -1,0 +1,4 @@
+execute if entity @e[type=item,nbt={Item:{id:"minecraft:tube_coral_block",Count:1b}}] at @e[type=item,nbt={Item:{id:"minecraft:tube_coral_block",Count:1b}}] if block ~ ~ ~ minecraft:soul_torch run function alchemy:create_alchemy
+execute if entity @e[type=armor_stand,tag=alchemy] run function alchemy:ring
+execute if entity @e[type=item,tag=alch] run function alchemy:alchemy
+execute if score @e[type=armor_stand,tag=alchemy,limit=1] ring matches 7..8 if entity @e[type=item,nbt={Item:{id:"minecraft:tube_coral_block",Count:1b}}] at @e[type=item,nbt={Item:{id:"minecraft:tube_coral_block",Count:1b}}] if entity @e[type=armor_stand,tag=alchemy,distance=..5] run function alchemy:destroy_alchemy

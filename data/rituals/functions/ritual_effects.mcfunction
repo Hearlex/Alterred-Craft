@@ -1,0 +1,1 @@
+execute if entity @e[type=item,nbt={Item:{}}] at @e[type=item,nbt={Item:{}}] if block ~ ~ ~ minecraft:soul_lantern run function rituals:start_ritual
