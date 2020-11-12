@@ -20,3 +20,5 @@ execute at @e[type=item,nbt={Item:{id:"minecraft:bread",Count:1b}}] if block ~ ~
 execute at @e[type=item,tag=effectSat,nbt={Item:{}}] run effect give @a[distance=..10] minecraft:saturation 10 1
 
 kill @e[type=item,tag=effectRegen,nbt={Item:{}}]
+kill @e[type=item,tag=effectEnh,nbt={Item:{}}]
+kill @e[type=item,tag=effectSat,nbt={Item:{}}]
