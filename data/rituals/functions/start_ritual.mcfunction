@@ -17,7 +17,7 @@ execute at @e[type=item,tag=effectEnh,nbt={Item:{}}] run effect give @a[distance
 execute at @e[type=item,tag=effectEnh,nbt={Item:{}}] run effect give @a[distance=..10] minecraft:water_breathing 600 4
 
 execute at @e[type=item,nbt={Item:{id:"minecraft:bread",Count:1b}}] if block ~ ~ ~ minecraft:soul_lantern run data merge entity @e[type=item,limit=1,distance=..5] {PickupDelay:440,Tags:["effectSat"],Item:{id:"minecraft:bread",Count:1b}}
-execute at @e[type=item,tag=effectSat,nbt={Item:{}}] run effect give @a[distance=..10] minecraft:saturation 10 1
+execute at @e[type=item,tag=effectSat,nbt={Item:{}}] run effect give @a[distance=..10] minecraft:saturation 200 1
 
 kill @e[type=item,tag=effectRegen,nbt={Item:{}}]
 kill @e[type=item,tag=effectEnh,nbt={Item:{}}]
