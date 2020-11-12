@@ -11,4 +11,4 @@ execute at @e[type=item,nbt={Item:{id:"minecraft:clock",Count:1b}}] if block ~ ~
 execute if entity @e[tag=time,type=item,nbt={Item:{id:"minecraft:clock",Count:1b}}] run time add 3s
 execute if entity @e[tag=time,type=item,nbt={Item:{id:"minecraft:clock",Count:1b}}] at @e[tag=time,type=item,nbt={Item:{id:"minecraft:clock",Count:1b}}] run particle minecraft:white_ash ~ ~ ~ 1 1 1 0 9999
 
-execute if entity @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",Count:1b,tag:{display:{Name:'{"text":"Magic Iron","color":"dark_aqua","bold":true}'}}}}] at @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",Count:1b,tag:{display:{Name:'{"text":"Magic Iron","color":"dark_aqua","bold":true}'}}}}] run function extrarecipes:enchant_iron
+execute if entity @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",Count:1b,tag:{display:{Name:'{"text":"Magic Iron","color":"dark_aqua","bold":true}'}}}}] at @e[type=item,nbt={Item:{id:"minecraft:iron_ingot",Count:1b,tag:{display:{Name:'{"text":"Magic Iron","color":"dark_aqua","bold":true}'}}}}] run particle witch ~ ~ ~ 0.5 0.5 0.5 1 1 normal
